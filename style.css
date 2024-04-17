@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  */
+
+body {
+    height: 100vh;
+    position: relative;
+    background-color: hsla(0, 0%, 100%, 0.2);
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+}
+
+.left {
+    width: 610px;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.curve {
+    position: absolute;
+    width: 420px;
+    height: inherit;
+    background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 0 0 300px 300px;
+}
+
+.phone {
+    width: 250px;
+    height: 505px;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 30px 10px 30px 40px hsl(270deg 20% 96% / 65%);
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 2%;
+}
+
+.phone-inside {
+    background-color: hsla(270, 20%, 96%, 0.65);
+    position: relative;
+    border-radius: 30px;
+}
+
+.phone .top {
+    height: 65px;
+    border-radius: 30px 30px 5px 5px;
+    background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top .notch {
+    width: 130px;
+    height: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0px 0px 15px 15px;
+    position: absolute;
+    top: -17%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.top .top-content {
+    width: 200px;
+    height: 25px;
+    position: relative;
+    top: 10px;
+    left: 0;
+}
+
+.author .img {
+    height: inherit;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.author img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.author {
+    width: 110px;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-name {
+    color: white;
+    width: 75px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.author-name h4 {
+    font-size: 10px;
+    line-height: 12.5px;
+}
+
+.author-name p {
+    line-height: 12.5px;
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.phone .background {
+    position: relative;
+    height: 420px;
+    border-radius: 0px 0px 30px 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.chat {
+    width: 135px;
+    height: fit-content;
+    border-radius: 10px 10px 0px 10px;
+    padding: 10px;
+    background-color: hsl(270, 20%, 96%);
+}
+
+.chat p {
+    width: 110px;
+    color: hsl(276, 55%, 52%);
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.chat.second-left p {
+    width: 125px;
+}
+
+.chat.first-left,
+.chat.second-left,
+.chat.third-left,
+.price {
+    position: relative;
+    top: 0;
+    left: -36%;
+    border-radius: 10px 10px 10px 0px;
+}
+
+.price {
+    left: -50px;
+}
+
+.dog-wrapper {
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dog-wrapper .dog {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.dog-wrapper img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.chat.right {
+    background-color: white;
+    width: fit-content;
+}
+
+.chat.right p {
+    width: 140px;
+}
+
+.chat.right.second p {
+    width: fit-content;
+}
+
+.chat.third-left p {
+    width: 110px;
+}
+
+.price {
+    width: 160px;
+    height: 30px;
+    background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 10px 10px 10px 0px;
+}
+
+.message {
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0 5px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message p {
+    width: fit-content;
+    font-size: 10px;
+    color: hsl(206, 6%, 79%);
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: hsl(271, 36%, 24%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+article {
+    width: 445px;
+    height: 170px;
+    color: rgb(53, 53, 53);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+article h1 {
+    width: fit-content;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+article p {
+    line-height: 25px;
+    font-weight: 400;
+    color: rgba(53, 53, 53, 0.589);
+}
+
+.curve.right {
+    right: 0;
+    bottom: 0;
+    height: 680px;
+    width: 350px;
+    transform: rotate(180deg);
+    background: linear-gradient(to top, hsla(264, 100%, 61%, 0.1), hsla(293, 100%, 63%, 0.1));
+}
+
+@media screen and (max-width:430px) {
+    body {
+        height: 930px;
+    }
+
+    .left {
+        width: 100%;
+        height: 580px;
+    }
+
+    .curve {
+        width: 100%;
+        top: -25%;
+        left: -50%;
+    }
+
+    .phone {
+        bottom: -40%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    article {
+        width: 100%;
+        height: 230px;
+        transform: translate(-50%, 50%);
+        top: 55%;
+        padding: 0 35px;
+        text-align: center;
+    }
+
+    .curve.right {
+        display: none;
+    }
+}
